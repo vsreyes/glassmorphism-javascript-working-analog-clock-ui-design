@@ -101,3 +101,58 @@ body::after {
   border-radius: 50%;
   z-index: 10000;
 }
+.hour,
+.min,
+.sec {
+  position: absolute;
+}
+.hour,
+.hr {
+  width: 160px;
+  height: 160px;
+}
+.min,
+.mn {
+  width: 190px;
+  height: 190px;
+}
+.sec,
+.sc {
+  width: 230px;
+  height: 230px;
+}
+.hr,
+.mn,
+.sc {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
+.hr::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 80px;
+  background: #ff105e;
+  z-index: 11;
+  border-radius: 6px;
+}
+.mn::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background: #fff;
+  z-index: 12;
+  border-radius: 6px;
+}
+.sc::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: #fff;
+  z-index: 12;
+  border-radius: 6px;
+}
